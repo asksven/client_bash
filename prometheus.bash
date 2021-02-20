@@ -425,7 +425,7 @@ io::prometheus::internal::DispatchGauge() {
   local metricname="$1"
   shift
 
-  local -a label_args
+  local -a label_args=()
   local methodname=''
   while [[ $# -gt 0 ]]; do
     case "$1" in
